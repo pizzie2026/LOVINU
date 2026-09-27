@@ -1,0 +1,427 @@
+:root{--petrol:#4ba8b4;--ink:#15191b;--muted:#596064;--ice:#eaf7f8;--footer:#344a51;--white:#fff;--max:1680px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:var(--font-manrope),Arial,Helvetica,sans-serif;background:#fff}a{color:inherit;text-decoration:none}p{line-height:1.45}.siteHeader{height:92px;max-width:var(--max);margin:auto;padding:0 0;display:flex;align-items:center;gap:28px;background:#fff}.brand img{width:150px;display:block}.siteHeader nav{display:flex;gap:25px;align-items:center;margin-left:18px;font-size:14px}.siteHeader .headerCta{margin-left:auto}.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:var(--petrol);color:#fff;font-weight:700;padding:15px 23px;font-size:14px}.headerCta{white-space:nowrap}.menu{display:none;border:0;background:none;font-size:28px}.hero{max-width:var(--max);margin:auto;display:grid;grid-template-columns:56% 44%;min-height:445px}.heroPhoto{background:url('/images/home-hero.jpg') center/cover no-repeat;min-height:445px}.heroCopy{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:55px 9%;background:radial-gradient(circle at 45% 48%,#fff 0,#f2f3f3 38%,#e4e6e7 100%)}h1{font-size:54px;line-height:1.02;margin:0 0 32px;letter-spacing:-1.8px}.heroNote{position:absolute;right:10%;bottom:35px;color:#5b6365;display:flex;align-items:center;gap:12px}.heroNote img{width:76px;height:76px;object-fit:contain;flex:0 0 auto}.heroNote p{margin:0;line-height:1.3}.band{background:var(--ice)}.intro,.split,.plan,.team{max-width:var(--max);margin:auto;padding:62px 6%}.sectionHead{display:grid;grid-template-columns:8px 1fr;gap:34px;align-items:start}.rule{width:7px;height:68px;background:var(--petrol);display:block}.sectionHead h2,.plan h2{font-size:38px;line-height:1.06;margin:0 0 16px;letter-spacing:-.8px}.sectionHead p{font-size:17px;color:var(--muted);max-width:900px}.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:35px;margin:50px 4% 0}.benefit{display:flex;gap:18px;align-items:center;color:#5a6467}.icon{width:38px;height:38px;border:2px solid var(--petrol);border-radius:50%;display:grid;place-items:center;color:var(--petrol);font-size:20px}.split{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;background:#fff}.copy .pill{margin-top:18px}.knowledge{overflow:visible;align-self:center;line-height:0}.knowledge img{width:100%;height:auto!important;max-height:none!important;display:block;object-fit:contain!important;aspect-ratio:auto!important;filter:grayscale(1)}.plan{display:grid;grid-template-columns:1fr 1.35fr .48fr;gap:50px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.05em}.planIntro p{color:var(--muted);max-width:430px}.planIntro .pill{margin-top:16px}.steps{display:flex;align-items:flex-start;justify-content:space-between;position:relative}.steps:before{content:"";position:absolute;left:7%;right:7%;top:26px;height:2px;background:#b9dfe3}.step{position:relative;z-index:1;text-align:center;width:16.66%}.step span{width:54px;height:54px;margin:auto;border-radius:50%;display:grid;place-items:center;background:#cfecef;font-size:12px}.step small{display:block;margin-top:13px;font-size:11px;color:#566064}.plan blockquote{border-left:5px solid var(--petrol);margin:0;padding:0 0 0 20px;font-size:16px;line-height:1.35}.team{background:#fff}.teamTitle{display:flex;justify-content:space-between;align-items:flex-start;gap:30px}.teamTitle>a{color:var(--petrol);font-size:14px;white-space:nowrap;margin-top:10px}.teamGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:11%;margin:45px 4% 0}.teamGrid img{width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(1)}.teamGrid h3{font-size:18px;margin:13px 0 5px}.teamGrid p{font-size:13px;margin:0;color:#4e5659}footer{max-width:var(--max);min-height:118px;margin:auto;padding:26px 6%;background:var(--footer);color:#fff;display:flex;align-items:center;gap:28px;font-size:12px}.footerLogo{width:145px}.legal{display:flex;gap:25px;margin-left:auto}.footerClaim{display:flex;align-items:center;gap:13px;margin-left:8%}.footerClaim img{width:38px;height:38px;object-fit:contain}
+@media(max-width:1100px){.siteHeader nav{display:none}.menu{display:block;margin-left:auto}.headerCta{display:none}.hero{grid-template-columns:1fr 1fr}.plan{grid-template-columns:1fr}.plan blockquote{max-width:430px}.teamGrid{gap:5%}}
+@media(max-width:720px){.siteHeader{height:72px;padding:0 22px}.brand img{width:118px}.hero{display:flex;flex-direction:column}.heroPhoto{min-height:62vw;background-position:48% center}.heroCopy{min-height:285px;padding:42px 24px;background:#f3f4f4}.heroCopy h1{font-size:42px}.heroNote{right:24px;bottom:24px;font-size:12px}.heroNote img{width:60px;height:60px}.intro,.split,.plan,.team{padding:48px 24px}.sectionHead{grid-template-columns:6px 1fr;gap:18px}.rule{width:5px;height:58px}.sectionHead h2,.plan h2{font-size:31px}.benefits{grid-template-columns:1fr 1fr;margin:36px 0 0;gap:24px}.split{grid-template-columns:1fr;gap:34px}.knowledge{order:-1}.plan{gap:35px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.steps:before{display:none}.step{width:auto}.step::after{content:"";position:absolute;top:26px;left:calc(50% + 27px);width:calc(100% - 54px);height:2px;background:#b9dfe3;z-index:-1}.step:nth-child(3)::after,.step:nth-child(6)::after{display:none}.teamTitle{display:block}.teamTitle>a{display:inline-block;margin:8px 0 0 24px}.teamGrid{grid-template-columns:1fr;gap:38px;margin:38px 0 0}.teamGrid article{max-width:430px}footer{flex-wrap:wrap;padding:28px 24px;gap:18px}.footerLogo{width:120px}.legal{order:3;width:100%;margin:0}.footerClaim{margin-left:auto}.footerClaim b{display:none}}
+
+/* Manrope typography recommendation – pending final LOVINU approval */
+h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav{font-weight:500}
+
+/* Personal Longevity */
+.siteHeader nav a.active{color:var(--petrol)}
+.plPage{max-width:var(--max);margin:auto}.plHero{display:grid;grid-template-columns:52% 48%;min-height:570px;background:#f1f3f3}.plHeroImage{min-height:570px;background:linear-gradient(90deg,rgba(0,0,0,.08),rgba(0,0,0,.02)),url('/images/home-hero.jpg') 34% center/cover no-repeat;filter:grayscale(1)}.plHeroCopy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:65px 10%}.plHeroCopy h1{font-size:50px;line-height:1.05;letter-spacing:-1.5px;margin:18px 0 25px}.plHeroCopy p{font-size:18px;line-height:1.55;color:var(--muted);max-width:520px;margin:0 0 30px}.plIntro{padding:90px 8%;background:#fff}.plIntro .sectionHead{max-width:900px}.plIntro .sectionHead h2{margin-top:12px}.plBigQuote{font-size:30px;line-height:1.3;margin:70px 0 0 42%;padding-left:28px;border-left:5px solid var(--petrol)}.plQualities{padding:85px 8%;background:var(--ice)}.plQualitiesHead{max-width:760px}.plQualitiesHead h2,.plLookCopy h2,.plGoal h2,.plBridge h2,.plClose h2{font-size:40px;line-height:1.08;letter-spacing:-.9px;margin:12px 0 18px}.plQualitiesHead p,.plLookCopy p,.plGoal p,.plBridge p,.plClose p{font-size:17px;color:var(--muted);line-height:1.55}.plQualityGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:55px}.plQualityGrid article{border-top:2px solid #b8dfe3;padding-top:20px}.plQualityGrid article>span{font-size:11px;color:var(--petrol);font-weight:600}.plQualityGrid h3{font-size:20px;margin:22px 0 8px}.plQualityGrid p{font-size:14px;color:var(--muted);margin:0}.plLookAhead{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center;padding:90px 8%;background:#fff}.plLookVisual{min-height:360px;background:#e9ebeb;display:flex;align-items:flex-end;padding:42px;position:relative;overflow:hidden}.plLookVisual:before{content:"";position:absolute;width:380px;height:380px;border:1px solid #c5cdcf;border-radius:50%;right:-85px;top:-80px}.plLookNumber{font-size:150px;line-height:.78;font-weight:500;color:#c4cacc;letter-spacing:-8px}.plLookYears{font-size:14px;line-height:1.3;margin-left:22px;color:#687174}.plLookCopy{max-width:560px}.plGoal{display:grid;grid-template-columns:1fr 1fr;gap:90px;padding:85px 8%;background:#344a51;color:#fff}.plGoal p{color:#dbe3e5;max-width:520px}.plGoal blockquote{border-left:5px solid var(--petrol);padding-left:28px;margin:10px 0;font-size:21px;line-height:1.5;align-self:center}.plBridge{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;padding:90px 8%;background:var(--ice)}.plBridgeCopy{max-width:620px}.plBridgeCopy .pill{margin-top:18px}.plBridgeMark{justify-self:center;text-align:center;color:#596064}.plBridgeMark img{width:115px;height:115px;object-fit:contain}.plBridgeMark p{font-size:25px;line-height:1.25;margin:20px 0 12px;color:var(--ink)}.plBridgeMark strong{font-size:13px;color:var(--petrol)}.plClose{text-align:center;padding:90px 24px 100px;background:#fff}.plClose p{max-width:650px;margin:0 auto 30px}.plClose h2{font-size:48px}
+@media(max-width:1100px){.plHero{grid-template-columns:1fr 1fr}.plHeroCopy h1{font-size:42px}.plQualityGrid{grid-template-columns:1fr 1fr}.plLookAhead,.plGoal,.plBridge{gap:45px}}
+@media(max-width:720px){.plHero{display:flex;flex-direction:column}.plHeroImage{min-height:64vw;background-position:35% center}.plHeroCopy{padding:44px 24px 52px}.plHeroCopy h1{font-size:37px}.plIntro,.plQualities,.plLookAhead,.plGoal,.plBridge{padding:55px 24px}.plBigQuote{font-size:24px;margin:48px 0 0 24px}.plQualityGrid{grid-template-columns:1fr 1fr;gap:30px 20px}.plLookAhead,.plGoal,.plBridge{grid-template-columns:1fr}.plLookVisual{min-height:260px;order:2}.plLookNumber{font-size:110px}.plQualitiesHead h2,.plLookCopy h2,.plGoal h2,.plBridge h2,.plClose h2{font-size:32px}.plGoal blockquote{font-size:18px}.plBridgeMark{margin-top:20px}.plClose{padding:65px 24px 75px}}
+
+/* Shared content pages: Dein Plan / Was wir tun */
+.subPage{max-width:var(--max);margin:auto}.subHero{min-height:510px;padding:80px 8%;display:grid;grid-template-columns:1.15fr .85fr;gap:9%;align-items:center;background:#f2f4f4}.subHero h1{font-size:52px;margin:16px 0 22px}.subHero>div>p{max-width:610px;font-size:17px;color:var(--muted)}.subHero .lead{font-size:21px;color:var(--ink);margin-bottom:8px}.subHero .pill{margin-top:18px}.subHero aside{border-left:5px solid var(--petrol);padding:25px 0 25px 28px}.subHero aside span{display:block;font-size:11px;letter-spacing:.08em;color:var(--petrol);font-weight:600}.subHero aside strong{display:block;font-size:28px;font-weight:500;margin:12px 0}.subHero aside p{color:var(--muted);margin:0}.planStepsPage,.planFeature,.planTimeline,.principle,.approach,.workDetail,.workClose{padding:85px 8%}.planStepsPage h2,.planFeature h2,.planTimeline h2,.approach h2,.workDetail h2,.workClose h2{font-size:40px;line-height:1.08;letter-spacing:-.9px;margin:12px 0 20px}.planStepGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 6%;margin-top:55px}.planStepGrid article{border-top:2px solid #b9dfe3;padding-top:18px}.planStepGrid article>span,.priorityGrid article>span,.approachGrid article>span{font-size:11px;color:var(--petrol);font-weight:600}.planStepGrid h3{font-size:20px;margin:18px 0 8px}.planStepGrid p,.planFeature p,.planTimeline p,.principle p,.approach p,.workDetail p,.workClose p{color:var(--muted);font-size:16px;line-height:1.55}.ice{background:var(--ice)}.planFeature{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.scoreVisual{min-height:260px;background:#fff;display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;text-align:center;padding:35px}.scoreVisual>span{grid-column:1/-1;font-size:11px;color:var(--petrol);letter-spacing:.07em}.scoreVisual b{font-size:28px;font-weight:500}.scoreVisual i{font-size:30px;color:var(--petrol);font-style:normal}.priorityGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.priorityGrid article{background:#f5f7f7;padding:28px;min-height:180px}.priorityGrid b{display:block;font-size:19px;margin:25px 0 8px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:50px;position:relative}.timeline:before{content:"";position:absolute;left:7%;right:7%;top:27px;height:2px;background:#b9dfe3}.timeline div{text-align:center;position:relative}.timeline span{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#fff;margin:0 auto 14px;position:relative;z-index:1;font-size:11px}.timeline b{font-size:14px}.principle{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center}.principle blockquote{border-left:5px solid var(--petrol);padding-left:28px;margin:0;font-size:25px;line-height:1.45}.approach .introText{max-width:760px}.approachGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:55px}.approachGrid article{border-top:2px solid #b9dfe3;padding-top:18px}.approachGrid h3{font-size:21px;margin:20px 0 6px}.approachGrid b{font-size:12px;color:var(--petrol)}.approachGrid p{font-size:14px}.workDetail{display:grid;grid-template-columns:.85fr 1.15fr;gap:10%;align-items:start}.workDetail>div:last-child{padding-top:20px;max-width:620px}.sandraQuote{padding:90px 12%;background:#344a51;color:#fff}.sandraQuote blockquote{margin:0;max-width:1000px;font-size:30px;line-height:1.42;font-weight:400}.sandraQuote p{color:#bcdde0;margin-top:25px}.workClose{text-align:center;background:#fff}.workClose p{max-width:760px;margin:0 auto 22px}.workClose>strong{display:block;font-size:19px;font-weight:500;margin:28px auto;max-width:800px}.workClose .pill{margin-top:8px}.approach h2 em{font-weight:500}
+@media(max-width:1100px){.subHero{grid-template-columns:1fr .7fr}.approachGrid{grid-template-columns:1fr 1fr}.planStepGrid{gap:35px}.planFeature{gap:5%}}
+@media(max-width:720px){.subHero{grid-template-columns:1fr;padding:55px 24px;gap:35px}.subHero h1{font-size:38px}.subHero aside{margin-top:8px}.planStepsPage,.planFeature,.planTimeline,.principle,.approach,.workDetail,.workClose{padding:55px 24px}.planStepsPage h2,.planFeature h2,.planTimeline h2,.approach h2,.workDetail h2,.workClose h2{font-size:32px}.planStepGrid,.planFeature,.principle,.workDetail{grid-template-columns:1fr}.planStepGrid{gap:28px}.priorityGrid{grid-template-columns:1fr}.scoreVisual{min-height:220px}.timeline{grid-template-columns:repeat(2,1fr);gap:30px 0}.timeline:before{display:none}.approachGrid{grid-template-columns:1fr 1fr}.sandraQuote{padding:65px 24px}.sandraQuote blockquote{font-size:23px}.workDetail>div:last-child{padding-top:0}}
+
+/* Mood V5 alignment — Personal Longevity, Dein LOVINU-Plan, Was wir tun */
+.moodPLHero{display:grid;grid-template-columns:58% 42%;min-height:520px;background:#f1f3f3}.moodPLHeroImage{background:url('/images/mood/personal-hero.png') center/cover no-repeat;filter:grayscale(1)}.moodPLHeroCopy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:55px 9%}.moodPLHeroCopy h1{font-size:48px;line-height:1.05;margin:0 0 22px;letter-spacing:-1.2px}.moodPLHeroCopy p{font-size:18px;max-width:380px;margin:0 0 28px}.moodCenter{padding:72px 6%;text-align:center}.moodCenter>p{max-width:800px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.55}.moodCenter h2,.moodSplit h2,.moodVision h2{font-size:38px;line-height:1.08;margin:10px 0 18px}.moodFour{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;margin:48px auto 0;max-width:1120px}.moodFour article{text-align:center}.moodFour i{display:grid;place-items:center;margin:auto;width:54px;height:54px;border:2px solid #59727a;border-radius:50%;font-size:24px;font-style:normal}.moodFour h3{font-size:18px;margin:15px 0 7px}.moodFour p{font-size:13px;line-height:1.45;color:var(--muted)}.moodSplit,.moodVision{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:var(--ice)}.moodSplit>div,.moodVision>div{padding:70px 10%}.moodSplit img,.moodVision img{width:100%;height:100%;min-height:330px;object-fit:cover;filter:grayscale(1)}.moodSplit p,.moodVision p{font-size:16px;line-height:1.55;color:var(--muted)}.moodPlan{background:#fff}.numbered i{background:#233c43;color:#fff;border:0;width:34px;height:34px;font-size:13px}.moodPlan>.pill{margin-top:35px}.moodVision{background:#344a51;color:#fff}.moodVision p{color:#e2e8e9}.moodTestimonial{padding:58px 10%;background:#fff}.moodTestimonial blockquote{max-width:850px;font-size:20px;line-height:1.5;margin:18px 0 8px}.moodTestimonial p{font-size:13px;color:var(--muted)}.moodCta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:38px 6%;background:#148e91;color:#fff}.moodCta h2{font-size:26px;margin:7px 0 0}.whitePill{background:#fff!important;color:#148e91!important}
+.dpHero{display:grid;grid-template-columns:1.2fr .8fr;gap:8%;padding:78px 7%;background:#344a51;color:#fff}.dpHero h1{font-size:50px;line-height:1.05;margin:14px 0 20px}.dpHero p{max-width:590px;color:#e1e8e9}.dpHero .lead{font-size:18px;color:#fff}.dpHero aside{background:#fff;color:#24383e;border-radius:10px;padding:30px;align-self:center}.dpHero aside>span,.healthCard>span,.wish>span{font-size:10px;letter-spacing:.08em;font-weight:600}.dpHero aside blockquote{font-size:19px;line-height:1.45;margin:22px 0}.dpSteps{padding:55px 7%;background:var(--ice)}.dpSteps h2,.dpFeature h2,.dpPrior h2,.dpJourney h2{font-size:39px;line-height:1.08;margin:8px 0 12px}.dpSteps>p,.dpFeature p,.dpPrior p,.dpJourney p{color:var(--muted);max-width:750px}.moodSteps{margin-top:32px}.dpFeature{display:grid;grid-template-columns:1fr 1fr;gap:7%;padding:70px 7%;align-items:center}.healthCard{background:#f5f2ed;border-radius:10px;padding:30px;display:grid;grid-template-columns:180px 1fr;gap:15px 30px}.healthCard>span{grid-column:1/-1}.score78{width:145px;height:145px;border:12px solid #758c6d;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:42px;font-weight:600}.score78 small{font-size:10px;font-weight:400}.healthCard ul{list-style:none;padding:0;margin:0}.healthCard li{border-bottom:7px solid #d7dfd2;padding:10px 0 4px;font-size:12px;display:flex;justify-content:space-between}.dpPrior{display:grid;grid-template-columns:1fr 1fr;gap:20px 7%;padding:70px 7%;background:#f5f2ed}.wish{background:#fff;border-radius:9px;padding:24px}.wish p{font-size:14px!important;color:var(--ink)!important}.dpPrior .priorityGrid{grid-column:1/-1;background:transparent}.dpPrior .priorityGrid article{background:#fff;border-radius:8px}.dpJourney{padding:70px 7%}.journeyMonths{display:grid;grid-template-columns:repeat(6,1fr);margin-top:38px;border-bottom:2px solid #344a51}.journeyMonths b{text-align:center;font-size:11px;padding-bottom:15px;position:relative}.journeyMonths b:after{content:'';width:10px;height:10px;background:#344a51;border-radius:50%;position:absolute;bottom:-6px;left:50%}.journeyMonths span{display:block}.journeyRows{margin-top:25px}.journeyRows div{display:grid;grid-template-columns:180px 1fr;gap:8px;margin:5px 0;font-size:11px}.journeyRows b,.journeyRows span{padding:7px 10px;background:#e7f2f3}.journeyRows div:nth-child(2) b,.journeyRows div:nth-child(2) span{background:#edf3e9}.journeyRows div:nth-child(3) b,.journeyRows div:nth-child(3) span{background:#f5ece4}.journeyRows div:nth-child(4) b,.journeyRows div:nth-child(4) span{background:#eeeaf4}.moodPrinciple{background:var(--ice)}.workHero{padding:0!important;grid-template-columns:1fr 1fr!important;gap:0!important}.workHero>div{padding:65px 12%}.workHeroImg{width:100%;height:100%;min-height:480px;object-fit:cover;filter:grayscale(1)}.workMoodImg{width:100%;max-height:220px;object-fit:cover;filter:grayscale(1);margin-bottom:24px}
+@media(max-width:720px){.moodPLHero,.moodSplit,.moodVision,.dpHero,.dpFeature,.dpPrior{grid-template-columns:1fr}.moodPLHeroImage{min-height:62vw}.moodPLHeroCopy{padding:42px 24px}.moodPLHeroCopy h1{font-size:37px}.moodCenter{padding:55px 24px}.moodFour{grid-template-columns:1fr 1fr;gap:30px 18px}.moodSplit>div,.moodVision>div{padding:55px 24px}.moodSplit img,.moodVision img{min-height:260px}.moodCta{display:block;padding:35px 24px}.moodCta .pill{margin-top:22px}.dpHero,.dpSteps,.dpFeature,.dpPrior,.dpJourney{padding:55px 24px}.dpHero h1{font-size:38px}.healthCard{grid-template-columns:1fr}.score78{margin:auto}.dpPrior .priorityGrid{grid-column:auto}.journeyMonths{grid-template-columns:repeat(3,1fr);gap:25px 0;border:0}.journeyMonths b{border-bottom:2px solid #344a51}.journeyRows div{grid-template-columns:1fr}.workHero{grid-template-columns:1fr!important}.workHeroImg{min-height:65vw}.workHero>div{padding:55px 24px}}
+
+/* V5 Leitplanke – browseroptimiert, 21.09.2026 */
+.subPage h1,.subPage h2,.subPage h3{font-weight:500}.subPage p{font-size:17px;line-height:1.5}.subPage .eyebrow{font-size:13px;font-weight:700;letter-spacing:.055em;color:#178c95}.subPage .pill{font-size:15px;padding:15px 25px}.desktopOnly{display:block}
+
+/* Personal Longevity V5 */
+.plV5Hero{min-height:600px;position:relative;background:#ddd url('/images/mood/personal-hero-clean.png') left center/70% 100% no-repeat;overflow:hidden}.plV5Hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,0) 42%,rgba(255,255,255,.42) 62%,rgba(255,255,255,.9) 83%,rgba(255,255,255,.96) 100%)}.plV5HeroCopy{position:absolute;z-index:1;right:5.5%;top:50%;transform:translateY(-50%);width:37%;}.plV5HeroCopy h1{font-size:52px;line-height:1.08;letter-spacing:-1.3px;margin:0 0 24px}.plV5HeroCopy p{font-size:20px;line-height:1.45;margin:0 0 28px}.plV5Intro{padding:72px 6% 68px}.plV5Intro h2{font-size:42px}.plV5Intro>p{font-size:17px;max-width:760px}.plV5Four{margin-top:44px;gap:46px}.plV5Four article img{width:64px;height:64px;object-fit:cover;object-position:center;margin:auto;display:block;mix-blend-mode:multiply}.plV5Four h3{font-size:20px;font-weight:600}.plV5Four p{font-size:15px;line-height:1.45}.plV5Split>div{padding:72px 7%}.plV5Split h2{font-size:43px;line-height:1.1}.plV5Split p{font-size:17px}.plV5Split img{min-height:410px;object-position:center}.plV5Plan{padding:72px 6%}.plV5Plan h2{font-size:40px}.plV5Plan>p{font-size:17px}.plV5Plan .moodFour{max-width:1200px}.plV5Plan .moodFour h3{font-size:18px;font-weight:600}.plV5Plan .moodFour p{font-size:14px}.plV5Vision>div{padding:65px 6%}.plV5Vision h2{font-size:35px;line-height:1.18}.plV5Vision p{font-size:17px}.plV5Vision img{min-height:330px}.plV5Testimonial{display:grid;grid-template-columns:120px 1fr auto;gap:28px;align-items:center;padding:48px 6%}.plV5Testimonial>img{width:104px;height:104px;border-radius:50%;object-fit:cover;filter:grayscale(1)}.plV5Testimonial blockquote{font-size:18px;line-height:1.5;margin:12px 0 8px}.plV5Testimonial p{font-size:14px}.testimonialArrows{font-size:30px;color:#168c95;white-space:nowrap}
+
+/* Dein Plan – V5 proportions/readability */
+.dpHero{padding:74px 6%;gap:7%}.dpHero h1{font-size:54px;line-height:1.05}.dpHero .lead{font-size:19px}.dpHero p{font-size:17px;line-height:1.45}.dpHero aside{padding:34px}.dpHero aside blockquote{font-size:21px}.dpSteps{padding:62px 6%}.dpSteps h2,.dpFeature h2,.dpPrior h2,.dpJourney h2{font-size:42px}.dpSteps>p,.dpFeature p,.dpPrior p,.dpJourney p{font-size:16px;line-height:1.5}.moodSteps .step b{display:block;font-size:13px;margin-top:11px}.dpFeature{padding:72px 6%;gap:8%}.healthCard{padding:34px}.dpPrior{padding:72px 6%;gap:24px 7%}.dpPrior .priorityGrid article{padding:30px}.dpJourney{padding:72px 6%}.moodPrinciple{padding:58px 6%}.moodPrinciple blockquote{font-size:27px;line-height:1.4}
+
+/* Was wir tun – V5 layout */
+.workV5Hero{display:grid;grid-template-columns:1fr 1fr;min-height:430px;background:#f5f6f6}.workV5Hero>div{padding:48px 8%}.workV5Hero h1{font-size:54px;line-height:1.02;letter-spacing:-1.3px;margin:12px 0 18px}.workV5Hero p{font-size:17px;max-width:520px;margin:0 0 14px}.workV5Hero img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}.workV5Approach{text-align:center;padding:34px 6% 44px}.workV5Approach h2{font-size:35px;margin:8px 0 12px}.workV5Approach>p{font-size:15px;line-height:1.45;max-width:850px;margin:0 auto}.workV5Grid{display:grid;grid-template-columns:repeat(4,1fr);margin:28px auto 0;max-width:1000px}.workV5Grid article{padding:0 28px;border-right:1px solid #ccd2d3}.workV5Grid article:last-child{border:0}.workV5Grid article>span{font-size:39px;line-height:1;color:#4eb6bd;font-weight:500}.workV5Grid h3{font-size:20px;margin:8px 0 4px}.workV5Grid b{font-size:14px;font-weight:500}.workV5Grid p{font-size:14px;line-height:1.35;margin:4px 0}.workV5Row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:255px}.workV5Row>img{width:100%;height:100%;object-fit:cover;filter:grayscale(1)}.workV5Text{padding:28px 10% 30px;position:relative}.workV5Text .workNum,.workV5Double .workNum{font-size:27px;color:#4eb6bd;font-weight:500;margin-right:25px}.workV5Text h2,.workV5Double h2{font-size:30px;line-height:1.08;margin:7px 0 12px}.workV5Text p,.workV5Double p{font-size:14px;line-height:1.4;margin:8px 0}.workV5Text blockquote{border-left:4px solid #9ba8aa;padding-left:18px;margin:15px 0 0;color:#168c95;font-size:21px;line-height:1.2}.workV5Quote{padding:25px 18%;display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.workV5Quote blockquote{font-size:23px;line-height:1.35;font-style:italic}.workV5Quote p{font-size:13px;white-space:nowrap}.workV5Double{display:grid;grid-template-columns:1fr 1fr;padding:28px 5% 34px;gap:0}.workV5Double>div{padding:0 5%}.workV5Double>div+div{border-left:1px solid #d3d7d8}.workV5Close{display:grid;grid-template-columns:1fr 190px;gap:60px;align-items:center;padding:36px 6% 42px;background:#f5f8f8}.workV5Close h2{font-size:30px;margin:8px 0 12px}.workV5Close p{font-size:14px;line-height:1.4;margin:7px 0}.workV5Close strong{display:block;margin-top:12px;font-size:15px}.workV5Close img{width:145px;justify-self:center}
+
+@media(max-width:1100px){.plV5HeroCopy h1{font-size:44px}.workV5Hero h1{font-size:46px}.workV5Grid article{padding:0 16px}.workV5Quote{padding-left:8%;padding-right:8%}}
+@media(max-width:720px){.desktopOnly{display:none}.subPage p{font-size:16px}.plV5Hero{min-height:650px;background-size:auto 56%;background-position:28% top;background-color:#f3f4f4}.plV5Hero:after{display:none}.plV5HeroCopy{position:absolute;left:0;right:0;top:auto;bottom:0;transform:none;width:100%;padding:32px 24px 38px;background:#f3f4f4}.plV5HeroCopy h1{font-size:39px}.plV5HeroCopy p{font-size:17px}.plV5Intro h2,.plV5Split h2,.plV5Plan h2{font-size:33px}.plV5Four{grid-template-columns:1fr 1fr}.plV5Split img{min-height:290px}.plV5Vision h2{font-size:30px}.plV5Testimonial{grid-template-columns:86px 1fr;padding:42px 24px}.plV5Testimonial>img{width:78px;height:78px}.testimonialArrows{display:none}.moodCta h2{font-size:24px}.dpHero h1{font-size:40px}.dpSteps h2,.dpFeature h2,.dpPrior h2,.dpJourney h2{font-size:34px}.moodPrinciple blockquote{font-size:23px}.workV5Hero{grid-template-columns:1fr}.workV5Hero>div{padding:42px 24px}.workV5Hero h1{font-size:42px}.workV5Hero img{min-height:62vw;grid-row:1}.workV5Approach{padding:45px 24px}.workV5Approach h2{font-size:31px}.workV5Grid{grid-template-columns:1fr 1fr;gap:28px 0}.workV5Grid article:nth-child(2){border-right:0}.workV5Grid article{padding:0 15px}.workV5Row,.workV5Row.reverse{grid-template-columns:1fr}.workV5Row>img{min-height:52vw}.workV5Row.reverse>img{order:2}.workV5Text{padding:38px 24px}.workV5Text h2,.workV5Double h2{font-size:28px}.workV5Quote{display:block;padding:42px 24px}.workV5Quote blockquote{font-size:21px}.workV5Double{grid-template-columns:1fr;padding:35px 24px}.workV5Double>div{padding:15px 0}.workV5Double>div+div{border-left:0;border-top:1px solid #d3d7d8;margin-top:20px;padding-top:35px}.workV5Close{grid-template-columns:1fr;padding:40px 24px}.workV5Close img{width:110px}}
+\n\n/* V5 desktop refinement: use the photographic areas as real image stages, not split uni panels. */
+.workV5PhotoHero{position:relative;display:block;min-height:520px;background-color:#eef1f1;background-image:linear-gradient(90deg,rgba(238,241,241,.98) 0%,rgba(238,241,241,.94) 30%,rgba(238,241,241,.45) 45%,rgba(238,241,241,0) 58%),url('/images/mood/work-hero-clean.png');background-repeat:no-repeat;background-size:auto contain;background-position:right center;overflow:hidden}
+.workV5PhotoHero>div{position:relative;z-index:1;width:52%;padding:64px 6%;background:transparent}
+.workV5DiagnosticPhoto{position:relative;display:block;min-height:390px;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.82) 32%,rgba(255,255,255,.18) 58%,rgba(255,255,255,0) 76%),url('/images/mood/work-diagnostics-clean.png') center/cover no-repeat;overflow:hidden}
+.workV5DiagnosticPhoto .workV5Text{position:relative;z-index:1;width:52%;padding:52px 6%;background:transparent}
+@media(min-width:1400px){
+  .siteHeader{height:104px}.brand img{width:170px}.siteHeader nav{font-size:15px;gap:30px}
+  .subPage p{font-size:17px}.eyebrow{font-size:13px}
+  .plV5HeroCopy h1,.workV5Hero h1{font-size:60px}
+  .dpHero h1{font-size:58px}
+  .workV5Approach h2{font-size:40px}.workV5Grid{max-width:1180px}.workV5Grid h3{font-size:22px}.workV5Grid p{font-size:15px}
+  .workV5Text h2,.workV5Double h2{font-size:34px}.workV5Text p,.workV5Double p{font-size:16px}
+}
+@media(max-width:720px){
+  .workV5PhotoHero{min-height:650px;background:linear-gradient(0deg,#f3f4f4 0%,#f3f4f4 39%,rgba(243,244,244,.88) 48%,rgba(243,244,244,0) 66%),url('/images/mood/work-hero-clean.png') center top/auto 62% no-repeat #f3f4f4}
+  .workV5PhotoHero>div{position:absolute;left:0;right:0;bottom:0;width:100%;padding:34px 24px 40px}
+  .workV5DiagnosticPhoto{min-height:690px;background:linear-gradient(0deg,#fff 0%,#fff 45%,rgba(255,255,255,.9) 53%,rgba(255,255,255,0) 68%),url('/images/mood/work-diagnostics-clean.png') center top/auto 58% no-repeat #fff}
+  .workV5DiagnosticPhoto .workV5Text{position:absolute;left:0;right:0;bottom:0;width:100%;padding:34px 24px 40px}
+}
+
+/* Desktop stage v4 – V5 as visual benchmark, not a tablet canvas centered on desktop. */
+@media(min-width:1200px){
+  :root{--max:94vw}
+  .siteHeader{width:94vw;max-width:none;height:108px}
+  .brand img{width:178px}
+  .siteHeader nav{font-size:16px;gap:31px}
+  .pill{font-size:15px;padding:16px 25px}
+
+  .hero,.plPage,.subPage,footer{width:94vw;max-width:none}
+  .hero{min-height:560px;grid-template-columns:56% 44%}
+  .heroPhoto{min-height:560px}
+  .heroCopy{padding:65px 8%}
+  h1{font-size:64px}
+  .heroNote{font-size:15px}
+  .intro,.split,.plan,.team{width:94vw;max-width:none;padding-left:7%;padding-right:7%}
+  .intro{padding-top:82px;padding-bottom:82px}
+  .sectionHead h2,.plan h2{font-size:46px}
+  .sectionHead p,.planIntro p{font-size:18px}
+  .benefit{font-size:16px}.icon{width:44px;height:44px}
+  .split{padding-top:86px;padding-bottom:86px;gap:7vw}
+  .plan{padding-top:82px;padding-bottom:82px}
+  .team{padding-top:82px;padding-bottom:90px}.teamGrid h3{font-size:21px}.teamGrid p{font-size:15px}
+
+  .plV5Hero{min-height:680px}
+  .plV5HeroCopy{right:6%;width:39%}.plV5HeroCopy h1{font-size:64px}.plV5HeroCopy p{font-size:21px}
+  .plV5Intro,.plV5Plan{padding-top:92px;padding-bottom:88px}.plV5Intro h2,.plV5Plan h2{font-size:48px}
+  .plV5Split>div{padding:88px 7%}.plV5Split h2{font-size:48px}.plV5Split img{min-height:500px}
+  .plV5Vision>div{padding:82px 7%}.plV5Vision h2{font-size:41px}.plV5Vision img{min-height:420px}
+  .plV5Testimonial{padding:62px 7%;grid-template-columns:145px 1fr auto}.plV5Testimonial>img{width:124px;height:124px}.plV5Testimonial blockquote{font-size:21px}
+
+  .dpHero,.dpSteps,.dpFeature,.dpPrior,.dpJourney,.moodPrinciple{padding-left:7%;padding-right:7%}
+  .dpHero{padding-top:92px;padding-bottom:92px}.dpHero h1{font-size:64px}.dpHero .lead{font-size:21px}
+  .dpSteps{padding-top:82px;padding-bottom:82px}.dpSteps h2,.dpFeature h2,.dpPrior h2,.dpJourney h2{font-size:48px}
+  .dpFeature,.dpPrior,.dpJourney{padding-top:88px;padding-bottom:88px}.moodPrinciple blockquote{font-size:31px}
+
+  .workV5PhotoHero{min-height:650px}.workV5PhotoHero>div{width:49%;padding:86px 7%}.workV5Hero h1{font-size:48px}.workV5Hero p{font-size:19px}
+  .workV5Approach{padding:58px 7% 66px}.workV5Approach h2{font-size:43px}.workV5Approach>p{font-size:17px}.workV5Grid{max-width:1320px;margin-top:42px}.workV5Grid article{padding:0 34px}.workV5Grid article>span{font-size:46px}.workV5Grid h3{font-size:24px}.workV5Grid b,.workV5Grid p{font-size:16px}
+  .workV5DiagnosticPhoto{min-height:500px}.workV5DiagnosticPhoto .workV5Text{width:49%;padding:70px 7%}
+  .workV5Row{min-height:410px}.workV5Text{padding:58px 8%}.workV5Text h2,.workV5Double h2{font-size:38px}.workV5Text p,.workV5Double p{font-size:17px}.workV5Text blockquote{font-size:24px}
+  .workV5Quote{padding:48px 14%}.workV5Quote blockquote{font-size:27px}
+  .workV5Double{padding:58px 7% 64px}.workV5Close{padding:58px 7% 64px}.workV5Close h2{font-size:38px}.workV5Close p{font-size:17px}
+}
+
+/* Requested corrections 21.09.2026 – only targeted changes */
+/* Home: V5-style open icons, no circles */
+.icon{border:0!important;border-radius:0!important;width:auto!important;height:auto!important;font-size:34px!important;display:inline-block!important;line-height:1;color:var(--petrol)}
+
+/* Personal Longevity: preserve hero image ratio; make river image a full photo stage; remove numbered-circle repetition */
+.plV5Hero{background-size:auto 100%;background-position:left center;background-color:#f3f4f4}
+.plV5Vision{position:relative;display:block;min-height:470px;background:url('/images/mood/personal-future-clean.png') center/cover no-repeat;color:#fff;overflow:hidden}
+.plV5Vision:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,47,53,.78) 0%,rgba(30,47,53,.56) 44%,rgba(30,47,53,.08) 76%)}
+.plV5Vision>div{position:relative;z-index:1;width:52%;padding:72px 7%}
+.plV5Vision>img{display:none}
+.plV5Vision p{color:#fff}
+.practicalFour{align-items:start}
+.practicalFour article{padding:0 18px;text-align:left;border-left:3px solid var(--petrol)}
+.practicalFour h3{margin:0 0 10px;font-size:19px}
+.practicalFour p{margin:0;font-size:15px}
+
+/* Was wir tun: hero photo definitely visible; remove duplicated 01–04 approach block */
+.workV5PhotoHero{background-image:linear-gradient(90deg,rgba(238,241,241,.93) 0%,rgba(238,241,241,.76) 31%,rgba(238,241,241,.12) 58%,rgba(238,241,241,0) 75%),url('/images/mood/work-hero-clean.png')!important;background-position:35% center!important;background-size:contain!important;background-repeat:no-repeat!important;background-color:#eef1f1!important}
+.workV5Approach{padding-bottom:58px}
+
+/* Dein Plan: no numbered steps/eyebrow numbering, synchronized goal cards, differentiated priorities */
+.moodSteps{padding-top:18px}
+.moodSteps:before{top:18px}
+.moodSteps .step{padding-top:31px}
+.moodSteps .step:before{content:"";position:absolute;top:13px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--petrol)}
+.moodSteps .step b{margin-top:0}
+.dpHero aside,.wish{background:#fff;color:#24383e;border-radius:10px;padding:30px}
+.wish>span{font-size:11px;letter-spacing:.08em}
+.wish p{font-size:20px!important;line-height:1.45!important;margin:18px 0 0!important;font-weight:500}
+.dpPrior .priorityGrid article{background:#e6f3f4;border:1px solid #d3e9eb}
+.journeyMonths{margin-left:180px}
+.journeyRows div{position:relative}
+.journeyRows span{background-image:repeating-linear-gradient(90deg,transparent 0,transparent calc(16.666% - 1px),rgba(52,74,81,.14) calc(16.666% - 1px),rgba(52,74,81,.14) 16.666%)}
+
+@media(max-width:720px){
+ .plV5Hero{background-size:auto 56%;background-position:28% top}
+ .plV5Vision{min-height:650px;background-position:center top}
+ .plV5Vision:after{background:linear-gradient(0deg,rgba(30,47,53,.96) 0%,rgba(30,47,53,.82) 45%,rgba(30,47,53,.08) 72%)}
+ .plV5Vision>div{position:absolute;left:0;right:0;bottom:0;width:100%;padding:38px 24px}
+ .practicalFour{grid-template-columns:1fr}
+ .journeyMonths{margin-left:0}
+}
+
+/* Requested refinements – 21.09.2026, V5 remains the visual benchmark */
+/* HOME: one continuous photographic hero with a soft extension of the existing blurred image area. */
+@media(min-width:721px){
+  .hero{position:relative;display:block;min-height:560px;overflow:hidden;background:#e9ebeb}
+  .heroPhoto{position:absolute;inset:0 43% 0 0;min-height:0;background-position:left center;background-size:cover;z-index:0}
+  .hero:after{content:"";position:absolute;left:52%;right:0;top:0;bottom:0;background:url('/images/home-hero.jpg') 100% center/auto 112% no-repeat;filter:blur(20px);transform:scale(1.08);opacity:.52;z-index:0}
+  .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,0) 45%,rgba(245,246,246,.28) 57%,rgba(245,246,246,.80) 76%,rgba(245,246,246,.93) 100%);z-index:1}
+  .heroCopy{position:absolute;z-index:2;right:0;top:0;bottom:0;width:44%;background:transparent;padding:55px 8% 55px 5%}
+}
+.icon{color:var(--petrol);width:54px!important;height:54px!important;display:grid!important;place-items:center!important}
+.icon svg{width:54px;height:54px;display:block}
+
+/* PERSONAL LONGEVITY: V5 hero composition – natural image ratio, copy inside the photograph. */
+.plV5Hero{min-height:600px;background:#ddd url('/images/mood/personal-hero-clean.png') left center/cover no-repeat!important}
+.plV5Hero:after{background:linear-gradient(90deg,rgba(255,255,255,0) 44%,rgba(255,255,255,.08) 53%,rgba(255,255,255,.72) 70%,rgba(255,255,255,.94) 100%)!important}
+.plV5HeroCopy{right:6%;width:38%}
+.practicalFour article{border-left:0;padding:0 22px;text-align:left}
+.practicalFour .practicalLead{font-size:14px;color:var(--ink);margin:0 0 4px}
+.practicalFour h3{font-size:19px;color:var(--ink);margin:0 0 6px;font-weight:700}
+.practicalFour p{font-size:14px;line-height:1.48}
+
+/* Quotes: V5-style large opening quotation marks, reusable for all testimonials. */
+.quoteMarks{position:relative;padding-left:64px!important;font-style:normal!important}
+.quoteMarks:before{content:'“';position:absolute;left:0;top:-24px;font-size:92px;line-height:1;color:#69c4ca;font-family:Georgia,serif;font-weight:700}
+.moodTestimonial .quoteMarks{padding-left:58px!important}
+
+/* WAS WIR TUN: prevent the intro paragraph from wrapping too narrowly on desktop. */
+.workV5Approach>p{max-width:1080px}
+
+/* DEIN PLAN: photo between headline copy and goal card; stronger step labels. */
+.dpHero{grid-template-columns:1.05fr .62fr .72fr;gap:3.5%;align-items:stretch}
+.dpHeroPhoto{min-height:330px;border-radius:10px;background:linear-gradient(0deg,rgba(22,37,42,.12),rgba(22,37,42,.12)),url('/images/peter.png') center 30%/cover no-repeat;filter:grayscale(1)}
+.dpHero aside{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.moodSteps .step b{font-size:20px!important;line-height:1.2;font-weight:600}
+.moodSteps .step:before{width:13px;height:13px;margin-left:-6.5px;top:10px}
+
+@media(min-width:1200px){
+ .plV5Hero{min-height:680px}
+ .workV5Approach>p{font-size:18px;line-height:1.55}
+ .moodSteps .step b{font-size:22px!important}
+ .dpHeroPhoto{min-height:390px}
+}
+@media(max-width:1100px){
+ .dpHero{grid-template-columns:1fr 1fr}.dpHeroPhoto{min-height:300px}.dpHero aside{grid-column:2}
+}
+@media(max-width:720px){
+ .hero{display:flex;flex-direction:column}.hero:before,.hero:after{display:none}.heroPhoto{position:static}.heroCopy{position:relative;width:auto}
+ .plV5Hero{min-height:650px;background-size:auto 56%!important;background-position:28% top!important;background-color:#f3f4f4!important}
+ .plV5Hero:after{display:none}
+ .quoteMarks{padding-left:46px!important}.quoteMarks:before{font-size:70px;top:-18px}
+ .dpHero{grid-template-columns:1fr}.dpHeroPhoto{min-height:62vw;grid-row:2}.dpHero aside{grid-column:auto;grid-row:3}
+ .moodSteps .step b{font-size:17px!important}
+}
+
+
+/* LOVINU MASTER – Was wir tun: Tablet Hero */
+@media (min-width:721px) and (max-width:1100px){
+  .workV5PhotoHero{
+    min-height:500px!important;
+    background-image:url('/images/mood/work-hero-clean.png')!important;
+    background-size:auto 60%!important;
+    background-position:right center!important;
+    background-repeat:no-repeat!important;
+    background-color:#eef1f1!important;
+  }
+
+  .workV5PhotoHero>div{
+    width:43%!important;
+    min-height:500px!important;
+    padding:52px 2.5% 42px 3%!important;
+    background:#eef1f1!important;
+  }
+
+  .workV5Hero h1{
+    font-size:34px!important;
+    line-height:1.04!important;
+    letter-spacing:-1px!important;
+  }
+
+  .workV5Hero h1 br{
+    display:block!important;
+  }
+
+  .workV5Hero p{
+    font-size:15px!important;
+    line-height:1.45!important;
+  }
+}
+
+/* LOVINU MASTER – Was wir tun: Smartphone Hero */
+@media (max-width:720px){
+
+  .workV5PhotoHero{
+    display:flex!important;
+    flex-direction:column!important;
+    min-height:0!important;
+    padding-top:0!important;
+    background-image:url('/images/mood/work-hero-clean.png')!important;
+    background-size:auto 220px!important;
+    background-position:58% top!important;
+    background-repeat:no-repeat!important;
+    background-color:#eef1f1!important;
+  }
+
+  .workV5PhotoHero>div{
+    position:relative!important;
+    left:auto!important;
+    right:auto!important;
+    bottom:auto!important;
+    width:100%!important;
+    min-height:0!important;
+    margin-top:220px!important;
+    padding:28px 26px 34px!important;
+    background:#eef1f1!important;
+  }
+
+  .workV5Hero h1{
+    margin-top:10px!important;
+    font-size:34px!important;
+    line-height:1.03!important;
+    letter-spacing:-1.2px!important;
+  }
+
+  .workV5Hero h1 br{
+    display:block!important;
+  }
+
+  .workV5Hero p{
+    font-size:17px!important;
+    line-height:1.5!important;
+    max-width:none!important;
+  }
+
+  .workV5Hero .pill{
+    margin-top:8px!important;
+  }
+}
+
+/* Was wir tun – Editorial 03 / Sandra / Zeit / 04 */
+.workV5Editorial{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background:#fff;
+}
+
+.workV5Editorial>div{
+  padding:58px 8%;
+}
+
+.workV5Editorial h2{
+  font-size:34px;
+  line-height:1.08;
+  margin:10px 0 18px;
+}
+
+.workV5Editorial p{
+  line-height:1.55;
+}
+
+.workV5Editorial .workV5Quote{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:48px 10%;
+  background:#304e56;
+  color:#fff;
+}
+
+.workV5Editorial .workV5Quote blockquote{
+  font-size:25px;
+  line-height:1.38;
+  margin:0;
+}
+
+.workV5Editorial .workV5Quote p{
+  text-align:right;
+  color:#fff;
+  font-weight:600;
+}
+
+.workTimeImage{
+  min-height:440px;
+  background:#111 url('/images/mood/work-time-concept.png') center/cover no-repeat;
+}
+
+.work04{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+@media(max-width:720px){
+  .workV5Editorial{
+    grid-template-columns:1fr;
+  }
+
+  .workV5Editorial>div{
+    padding:40px 24px;
+  }
+
+  .workV5Editorial .workV5Quote{
+    padding:44px 24px;
+  }
+
+  .workTimeImage{
+    min-height:52vw;
+  }
+}
+
+/* WWT – Uhr final */
+.workV5Editorial .workTimeImage{
+  padding:0!important;
+  min-height:440px!important;
+  background-image:url('/images/mood/work-time-concept.png')!important;
+  background-size:cover!important;
+  background-position:center 75%!important;
+  background-repeat:no-repeat!important;
+}
+
+/* LOVINU MASTER – Was wir tun: Large Tablet / iPad Pro */
+@media (min-width:1101px) and (max-width:1400px){
+
+  .workV5PhotoHero{
+    background-position:35% center!important;
+  }
+
+  .workV5Hero h1{
+    font-size:48px!important;
+    line-height:1.02!important;
+  }
+
+}
+
+/* HOME – mehr Kontrast für Icons und Plan-Schritte */
+
+.intro .icon{
+  color:#238f9b !important;
+}
+
+.intro .icon svg{
+  stroke-width:2.4 !important;
+}
+
+.plan .step span{
+  background:#79c5cd !important;
+  color:#15383d !important;
+  font-weight:700 !important;
+}
+
+.plan .steps:before{
+  background:#79c5cd !important;
+}
+
+/* DEIN PLAN – Gesundheitsscore 78/100 */
+
+.score78{
+  border:12px solid transparent !important;
+  background:
+    linear-gradient(#f5f2ed,#f5f2ed) padding-box,
+    conic-gradient(
+      #758c6d 0 78%,
+      #d7dfd2 78% 100%
+    ) border-box !important;
+}
+
+.healthCard li{
+  border-bottom-color:#758c6d !important;
+}
+
+/* PERSONAL LONGEVITY – final corrections */
+
+/* CTA eyebrow on petrol background */
+.moodCta .eyebrow{
+  color:#fff !important;
+}
+
+/* PL hero desktop – keep copy clear of image subject */
+@media (min-width:1101px){
+  .plV5HeroCopy{
+    width:34% !important;
+    right:1% !important;
+  }
+}
