@@ -1,0 +1,102 @@
+.page { color: var(--ink); }
+.page *, .header * { min-width: 0; }
+.page h1 { font-size: clamp(36px, 3.5vw, 56px); line-height: 1.06; margin: 18px 0 26px; }
+.page h2 { font-size: clamp(30px, 3.1vw, 48px); line-height: 1.1; letter-spacing: -.8px; margin: 14px 0 26px; }
+.page h3 { font-size: 23px; line-height: 1.25; margin: 22px 0 12px; }
+.page p { font-size: 18px; line-height: 1.55; color: var(--muted); max-width: 68ch; }
+.mobileHeroBreak { display: none; }
+.hero { display: grid; grid-template-columns: 1fr 1fr; background: #f3f4f4; }
+.heroCopy { padding: clamp(40px, 4vw, 64px) 10%; }
+.heroCopy .leitline { border-left: 4px solid var(--petrol); padding-left: 22px; margin: 32px 0 0; font-size: clamp(20px, 1.7vw, 26px); line-height: 1.4; color: var(--ink); }
+.heroMedia { display: flex; align-items: center; justify-content: center; background: #e6e9e9; padding: 32px; }
+.heroMedia > img { display: block; width: 100%; height: auto; filter: grayscale(1); }
+.section { padding: clamp(54px, 6vw, 96px) 7%; }
+.why { display: grid; grid-template-columns: 1fr 1fr; gap: 7%; align-items: center; background: #148e91; color: var(--white); }
+.why p:first-child, .competence p:first-child { margin-top: 0; }
+.intro { max-width: 950px; }
+.why p, .why :global(.eyebrow) { color: var(--white); }
+.why :global(.rule) { background: var(--white); }
+.team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6%; margin-top: 52px; }
+.team img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.team .profileRole { font-size: 17px; color: var(--ink); margin: 0 0 18px; font-weight: 500; }
+.team .profileBio { font-size: 18px; border-top: 1px solid #c9d8da; padding-top: 16px; }
+.principles { background: #f3f4f4; }
+.principleGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 44px; }
+.principleGrid article { border-top: 3px solid var(--petrol); padding: 32px; background: var(--white); }
+.principleGrid article:nth-child(2) { background: var(--ice); }
+.principleGrid article:nth-child(3) { background: #cfecef; }
+.principleGrid h3 { margin-top: 0; min-height: 2.5em; }
+.principleGrid p { color: var(--ink); margin-bottom: 0; }
+.competence { display: grid; grid-template-columns: 1fr 1.15fr; gap: 6%; align-items: center; background: var(--white); }
+.competence > div:first-child { border-left: 4px solid var(--petrol); padding-left: 28px; }
+.competence h2 { margin-bottom: 0; }
+.competence p:last-child { margin-bottom: 0; }
+.together { background: var(--ice); display: grid; grid-template-columns: 1fr 1fr; gap: 0 6%; align-items: center; }
+.selfCareMedia { aspect-ratio: 3 / 2; background: #e6e9e9; display: grid; align-items: center; }
+.selfCareMedia > img { display: block; width: 100%; height: auto; filter: grayscale(1); }
+.selfCarePlaceholder { padding: 32px; text-align: center; }
+.selfCarePlaceholder p { color: var(--ink); font-size: 24px; }
+.selfCarePlaceholder > span:last-child { color: var(--muted); font-size: 17px; }
+.together .closingLine { color: var(--footer); font-size: clamp(28px, 2.7vw, 40px); font-weight: 500; line-height: 1.15; letter-spacing: -.8px; margin: 32px 0 0; }
+.cta { background: #148e91; color: white; }
+.cta h2 { margin-top: 0; }
+.cta p { color: white; max-width: 790px; margin-bottom: 0; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin-top: 32px; }
+.actions > :global(.pill) { font-size: 19px; padding: 20px 34px; min-height: 64px; }
+.actions > a:last-child { border-bottom: 1px solid rgba(255,255,255,.65); padding-bottom: 5px; }
+.mobileMenu { display: none; }
+.page a:focus-visible, .header a:focus-visible, .mobileMenu summary:focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+@media (min-width: 1101px) and (max-width: 1450px) {
+  .header { gap: 18px; padding-inline: 2%; }
+  .header nav { gap: 17px; margin-left: 0; font-size: 14px; }
+  .header > :global(.headerCta) { display: none; }
+}
+@media (max-width: 1100px) {
+  .header { padding-inline: 24px; position: relative; }
+  .mobileMenu { display: block; margin-left: auto; }
+  .mobileMenu summary { cursor: pointer; padding: 12px 0 12px 16px; }
+  .mobileMenu nav { display: flex; position: absolute; left: 0; right: 0; top: 100%; z-index: 10; margin: 0; padding: 24px; background: white; border-bottom: 1px solid #c9d8da; flex-direction: column; align-items: flex-start; gap: 20px; }
+  .hero { grid-template-columns: 1fr; }
+  .heroCopy { padding: 54px 7%; }
+  .heroCopy h1 { max-width: 720px; }
+  .heroMedia { padding: 32px 7%; }
+  .heroMedia > img { max-width: 900px; }
+  .competence { grid-template-columns: 1fr; gap: 28px; }
+  .why, .together { grid-template-columns: 1fr; gap: 30px; }
+  .selfCareMedia { max-width: 800px; width: 100%; }
+  .principleGrid { gap: 16px; }
+  .principleGrid article { padding: 24px; }
+  .team { grid-template-columns: 1fr; }
+  .team article { display: grid; grid-template-columns: minmax(180px, .7fr) 1fr; column-gap: 32px; }
+  .team img { grid-row: 1 / 4; }
+  .team h3 { margin-top: 0; }
+  .team { gap: 4%; }
+  .page h3 { font-size: 21px; }
+  .cta { grid-template-columns: 1fr; gap: 30px; }
+  .actions { flex-direction: row; align-items: center; flex-wrap: wrap; }
+  .footer { flex-wrap: wrap; }
+  .footer :global(.footerClaim) { margin-left: 0; }
+}
+@media (max-width: 720px) {
+  .heroCopy, .section { padding: 48px 24px; }
+  .heroMedia { padding: 0 24px 32px; }
+  .page h1 { letter-spacing: -1.2px; }
+  .page p, .team .profileBio { font-size: 17px; }
+  .heroCopy .leitline { font-size: 23px; }
+  .mobileHeroBreak { display: block; }
+  .competence > div:first-child { padding-left: 20px; }
+  .selfCarePlaceholder { padding: 26px 20px; }
+  .selfCarePlaceholder p { font-size: 22px; }
+  .together .closingLine { font-size: 28px; margin-top: 30px; }
+  .page h2, .page h3 { overflow-wrap: anywhere; }
+  .why, .competence, .team, .principleGrid { grid-template-columns: 1fr; }
+  .why, .competence { gap: 20px; }
+  .team { gap: 40px; margin-top: 36px; }
+  .team article { display: block; max-width: 430px; }
+  .team h3 { margin-top: 22px; }
+  .principleGrid { gap: 32px; margin-top: 36px; }
+  .principleGrid article { padding: 28px; }
+  .principleGrid h3 { min-height: 0; margin: 0 0 18px; }
+  .principleGrid p { margin: 0; }
+  .actions { flex-direction: column; align-items: flex-start; }
+}
