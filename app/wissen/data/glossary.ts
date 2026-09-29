@@ -1,0 +1,9 @@
+export type GlossaryEntry={term:string;summary?:string;detail?:string;relevance?:string};
+export const glossaryEntries:GlossaryEntry[]=[
+{term:'Biologisches Alter',summary:'Das biologische Alter beschreibt, wie leistungsfähig und widerstandsfähig Körperfunktionen im Verhältnis zum Lebensalter wirken können.',relevance:'Es kann helfen, Entwicklungen im Blick zu behalten – es ist jedoch keine feste Vorhersage über Gesundheit oder Lebenserwartung.'},
+{term:'Bioimpedanzanalyse (BIA)',summary:'Die BIA ist eine Messung der elektrischen Leitfähigkeit des Körpers. Sie kann Hinweise auf Körperzusammensetzung, etwa Fettmasse, Muskelmasse und Körperwasser, geben.',detail:'Die Ergebnisse werden immer im Zusammenhang mit Ausgangslage, Messbedingungen und weiteren Informationen eingeordnet.'},
+{term:'Herzratenvariabilität (HRV)',summary:'Die HRV beschreibt die zeitlichen Schwankungen zwischen einzelnen Herzschlägen.',detail:'Sie kann Hinweise darauf geben, wie das autonome Nervensystem auf Belastung und Erholung reagiert.'},
+{term:'Mikrobiom',summary:'Das Mikrobiom bezeichnet die Gesamtheit der Mikroorganismen, die unter anderem im Darm leben.',relevance:'Es ist ein Teil eines größeren Bildes: Ernährung, Lebensweise, Beschwerden und medizinische Vorgeschichte gehören bei der Einordnung zusammen.'},
+{term:'Phasenwinkel',summary:'Der Phasenwinkel ist ein Wert aus der Bioimpedanzanalyse. Er wird aus dem Verhältnis elektrischer Widerstände berechnet.',detail:'Er kann im Verlauf ein zusätzlicher Baustein für die Einordnung der Körperzusammensetzung sein.'},
+{term:'Spirometrie',summary:'Die Spirometrie ist eine Lungenfunktionsmessung. Sie erfasst, wie viel Luft ein- und ausgeatmet wird und wie schnell das geschieht.'},
+...['Biomarker','Blutbild','Epigenetik','Gesundheitsspanne','Hormone','IHHT','Insulinresistenz','Mineralstoffe','oxidativer Stress','Prävention','Schlafarchitektur','Spurenelemente','Supplementierung','VO₂max'].map(term=>({term}))];

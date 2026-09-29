@@ -172,7 +172,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 
 /* DEIN PLAN: photo between headline copy and goal card; stronger step labels. */
 .dpHero{grid-template-columns:1.05fr .62fr .72fr;gap:3.5%;align-items:stretch}
-.dpHeroPhoto{min-height:330px;border-radius:10px;background:linear-gradient(0deg,rgba(22,37,42,.12),rgba(22,37,42,.12)),url('/images/peter.png') center 30%/cover no-repeat;filter:grayscale(1)}
+.dpHeroPhoto{min-height:330px;border-radius:10px;background:linear-gradient(0deg,rgba(22,37,42,.12),rgba(22,37,42,.12)),url('/images/dein-plan/dein-plan-hero-paar.png') center 30%/cover no-repeat;filter:grayscale(1)}
 .dpHero aside{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
 .moodSteps .step b{font-size:20px!important;line-height:1.2;font-weight:600}
 .moodSteps .step:before{width:13px;height:13px;margin-left:-6.5px;top:10px}

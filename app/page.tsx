@@ -10,14 +10,14 @@ function BenefitIcon({type}:{type:string}){
  return <svg {...common}><circle cx="22" cy="22" r="7"/><circle cx="42" cy="22" r="7"/><path d="M9 49c0-9 5-15 13-15s13 6 13 15M29 49c0-9 5-15 13-15s13 6 13 15"/></svg>;
 }
 const team = [
-  {img:'/images/sandra.png',name:'Dr. med. Sandra Nasikkol',role:'Gefäßchirurgin, ästhetische Medizin & medizinische Ernährungsberatung'},
-  {img:'/images/peter.png',name:'Peter Brudny',role:'Anästhesiologie, Mikronährstofftherapie, Schmerztherapie'},
-  {img:'/images/stefanie.png',name:'Stefanie Sprinke',role:'Organisation und Umsetzungsmanagement'}
+  {img:'/images/team/sandra.png',name:'Dr. med. Sandra Nasikkol',role:'Gefäßchirurgin, ästhetische Medizin & medizinische Ernährungsberatung'},
+  {img:'/images/team/peter.png',name:'Peter Brudny',role:'Anästhesiologie, Mikronährstofftherapie, Schmerztherapie'},
+  {img:'/images/team/stefanie.png',name:'Stefanie Sprinke',role:'Organisation und Umsetzungsmanagement'}
 ];
 
 export default function Home(){
  return <>
-  <header className="siteHeader"><a className="brand" href="#"><img src="/brand/lovinu-logo.svg" alt="LOVINU"/></a><nav><a href="#">Home</a><a href="/personal-longevity">Personal Longevity</a><a href="/was-wir-tun">Was wir tun</a><a href="/dein-plan">Dein Plan</a><a href="/ueber-lovinu">Über LOVINU</a><a href="#">Wissen</a><a href="#contact">Kontakt</a></nav><a className="pill headerCta" href="#contact">LOVINU kennenlernen →</a><button className="menu" aria-label="Menü">☰</button></header>
+  <header className="siteHeader"><a className="brand" href="#"><img src="/brand/lovinu-logo.svg" alt="LOVINU"/></a><nav><a href="#">Home</a><a href="/personal-longevity">Personal Longevity</a><a href="/was-wir-tun">Was wir tun</a><a href="/dein-plan">Dein Plan</a><a href="/ueber-lovinu">Über LOVINU</a><a href="/wissen">Wissen</a><a href="#contact">Kontakt</a></nav><a className="pill headerCta" href="#contact">LOVINU kennenlernen →</a><button className="menu" aria-label="Menü">☰</button></header>
 
   <main>
    <section className="hero"><div className="heroPhoto"/><div className="heroCopy"><h1>Länger gut leben.</h1><a className="pill" href="#contact">LOVINU kennenlernen →</a><div className="heroNote"><img src="/brand/lovinu-heart-blue.svg" alt=""/><p>Lebensfreude<br/>durch Gesundheit.</p></div></div></section>

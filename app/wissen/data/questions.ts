@@ -1,0 +1,8 @@
+export const processQuestions=[
+['Was bedeutet Longevity eigentlich?','Longevity beschäftigt sich mit der Frage, wie Gesundheit und Selbstständigkeit möglichst lange erhalten werden können. Dabei geht es nicht um ein Versprechen, sondern um verständliche Informationen und sinnvolle, persönliche Schritte.'],
+['Warum sollte ich mich mit Vorsorge beschäftigen, wenn ich mich gesund fühle?','Vorsorge kann helfen, die eigene Ausgangslage besser zu verstehen und Entwicklungen frühzeitig einzuordnen. Bei Beschwerden ersetzt sie jedoch keine medizinische Abklärung.'],
+['Was kann ein Blutbild zeigen – und was nicht?','Laborwerte können wichtige Hinweise geben. Für sich allein erzählen sie jedoch selten die ganze Geschichte. Erst zusammen mit Anamnese, Untersuchung und persönlichen Zielen entsteht eine sinnvolle Einordnung.'],
+['Muss ich bereits ein konkretes Gesundheitsziel haben?','Nein. Ein kostenloses Erstgespräch kann auch der Anfang sein, um Fragen zu sortieren und herauszufinden, welche Themen für dich relevant sein könnten.'],
+['Wie entsteht mein persönlicher Gesundheitsplan?','Nach Erstgespräch, Anamnese und ärztlichem Gespräch folgt eine individuell ausgewählte Diagnostik. Die Ergebnisse werden ausgewertet und in einen persönlichen Plan übersetzt.'],
+['Wie wird überprüft, ob mein Plan funktioniert?','Spätere Kontrollen und Gespräche helfen dabei, Entwicklungen zu betrachten und den Plan bei Bedarf anzupassen.']];
+export const responsibilityQuestions=['Kann ich mit akuten Beschwerden zu LOVINU kommen?','Behandelt LOVINU Erkrankungen?','Was passiert bei einem auffälligen Befund?','Kann LOVINU eine bestehende fachärztliche Behandlung begleiten?'];

@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description: 'Die Menschen und die Idee hinter LOVINU: medizinische Präzision, Zeit zum Zuhören und persönliche Begleitung.',
 };
 
-const links = [['/', 'Home'], ['/personal-longevity', 'Personal Longevity'], ['/was-wir-tun', 'Was wir tun'], ['/dein-plan', 'Dein Plan'], ['/ueber-lovinu', 'Über LOVINU'], ['#', 'Wissen'], ['#contact', 'Kontakt']];
+const links = [['/', 'Home'], ['/personal-longevity', 'Personal Longevity'], ['/was-wir-tun', 'Was wir tun'], ['/dein-plan', 'Dein Plan'], ['/ueber-lovinu', 'Über LOVINU'], ['/wissen', 'Wissen'], ['#contact', 'Kontakt']];
 const team = [
-  { name: 'Dr. med. Sandra Nasikkol', image: '/images/sandra.png', role: 'Fachärztliche Betreuung', bio: 'Als Gefäßchirurgin erlebt Sandra Nasikkol täglich, wohin Erkrankungen führen können, die sich oft über viele Jahre entwickeln. Bei LOVINU möchte sie deshalb früher ansetzen: Menschen kennenlernen, bevor Krankheit ihr Leben bestimmt. Medizinische Erfahrung, Prävention und das persönliche Gespräch gehören für sie dabei untrennbar zusammen.' },
-  { name: 'Stefanie Sprinke', image: '/images/stefanie.png', role: 'Beratung und Management', bio: 'Stefanie Sprinke bringt jahrzehntelange Erfahrung in Beratung, Benefits und betrieblicher Gesundheitsvorsorge mit. Ihr Ansatz beginnt nicht mit einer fertigen Lösung, sondern mit einer Frage: Was braucht dieser Mensch wirklich? Bei LOVINU verbindet sie strukturiertes Denken mit der Überzeugung, dass gute Beratung vor allem eines braucht: Menschlichkeit.' },
-  { name: 'Peter Brudny', image: '/images/peter.png', role: 'Fachärztliche Betreuung', bio: 'Peter Brudny ist Anästhesist mit langjähriger klinischer und intensivmedizinischer Erfahrung. Ihn beschäftigt die Frage, wie Medizin nicht nur immer besser behandeln, sondern Gesundheit früher erhalten kann. Bei LOVINU bringt er medizinische Erfahrung und einen wissenschaftlich kritischen Blick auf neue Möglichkeiten der Longevity-Medizin zusammen.' },
+  { name: 'Dr. med. Sandra Nasikkol', image: '/images/team/sandra.png', role: 'Fachärztliche Betreuung', bio: 'Als Gefäßchirurgin erlebt Sandra Nasikkol täglich, wohin Erkrankungen führen können, die sich oft über viele Jahre entwickeln. Bei LOVINU möchte sie deshalb früher ansetzen: Menschen kennenlernen, bevor Krankheit ihr Leben bestimmt. Medizinische Erfahrung, Prävention und das persönliche Gespräch gehören für sie dabei untrennbar zusammen.' },
+  { name: 'Stefanie Sprinke', image: '/images/team/stefanie.png', role: 'Beratung und Management', bio: 'Stefanie Sprinke bringt jahrzehntelange Erfahrung in Beratung, Benefits und betrieblicher Gesundheitsvorsorge mit. Ihr Ansatz beginnt nicht mit einer fertigen Lösung, sondern mit einer Frage: Was braucht dieser Mensch wirklich? Bei LOVINU verbindet sie strukturiertes Denken mit der Überzeugung, dass gute Beratung vor allem eines braucht: Menschlichkeit.' },
+  { name: 'Peter Brudny', image: '/images/team/peter.png', role: 'Fachärztliche Betreuung', bio: 'Peter Brudny ist Anästhesist mit langjähriger klinischer und intensivmedizinischer Erfahrung. Ihn beschäftigt die Frage, wie Medizin nicht nur immer besser behandeln, sondern Gesundheit früher erhalten kann. Bei LOVINU bringt er medizinische Erfahrung und einen wissenschaftlich kritischen Blick auf neue Möglichkeiten der Longevity-Medizin zusammen.' },
 ];
 const principles = [
   ['Genau hinschauen.', 'Nicht einzelne Werte betrachten, sondern Zusammenhänge erkennen. Medizinische Daten sind Ausgangspunkt für ein umfassenderes Verständnis.'],
@@ -23,7 +23,7 @@ function Navigation() {
   return <>{links.map(([href, label]) => <a key={label} href={href} className={href === '/ueber-lovinu' ? 'active' : undefined} aria-current={href === '/ueber-lovinu' ? 'page' : undefined}>{label}</a>)}</>;
 }
 export default function AboutLovinu() {
-  const hasSelfCarePhoto = existsSync(path.join(process.cwd(), 'public/images/lovinu-selbstfuersorge.jpg'));
+  const hasSelfCarePhoto = existsSync(path.join(process.cwd(), 'public/images/ueber-lovinu/lovinu-selbstfuersorge.jpg'));
   return <>
     <header className={`siteHeader ${styles.header}`}>
       <a className="brand" href="/" aria-label="LOVINU – Home"><img src="/brand/lovinu-logo.svg" alt="LOVINU" /></a>
@@ -40,7 +40,7 @@ export default function AboutLovinu() {
           <p className={styles.leitline}>Medizin beginnt für uns mit Hinhören.</p>
         </div>
         <div className={styles.heroMedia}>
-          <img src="/images/lovinu-team.jpg" width={7360} height={4912} alt="Sandra Nasikkol, Stefanie Sprinke und Peter Brudny – die Menschen hinter LOVINU" />
+          <img src="/images/ueber-lovinu/lovinu-team.jpg" width={7360} height={4912} alt="Sandra Nasikkol, Stefanie Sprinke und Peter Brudny – die Menschen hinter LOVINU" />
         </div>
       </section>
       <section className={`${styles.section} ${styles.why}`}>
@@ -62,7 +62,7 @@ export default function AboutLovinu() {
       <section className={`${styles.section} ${styles.together}`}>
         <div className={styles.intro}><span className="eyebrow">ZUSAMMENARBEIT</span><h2>Deine Gesundheit bleibt deine.</h2><p>Wir können untersuchen, analysieren, erklären und Empfehlungen geben. Entscheidend ist aber, was daraus im Leben des Menschen entsteht.</p><p>Personal Longevity ist deshalb kein Programm, das man einfach absolviert. Der persönliche Plan entsteht gemeinsam und entwickelt sich weiter.</p><p className={styles.closingLine}>LOVINU begleitet.<br />Du gestaltest.</p></div>
         <div className={styles.selfCareMedia}>
-          {hasSelfCarePhoto ? <img src="/images/lovinu-selbstfuersorge.jpg" alt="Eine erwachsene Frau umarmt sich selbst – Selbstfürsorge und Eigenverantwortung" loading="lazy" /> : <div className={styles.selfCarePlaceholder}><span className="eyebrow">BILDPLATZHALTER · SELBSTFÜRSORGE</span><p>Eine Frau, die sich selbst umarmt.</p><span>Hier folgt ein Schwarzweiß-Motiv.</span></div>}
+          {hasSelfCarePhoto ? <img src="/images/ueber-lovinu/lovinu-selbstfuersorge.jpg" alt="Eine erwachsene Frau umarmt sich selbst – Selbstfürsorge und Eigenverantwortung" loading="lazy" /> : <div className={styles.selfCarePlaceholder}><span className="eyebrow">BILDPLATZHALTER · SELBSTFÜRSORGE</span><p>Eine Frau, die sich selbst umarmt.</p><span>Hier folgt ein Schwarzweiß-Motiv.</span></div>}
         </div>
       </section>
       <section className={`${styles.section} ${styles.cta}`} id="contact"><div><h2>Vielleicht sollten wir uns kennenlernen.</h2><p>Gesundheit ist persönlich. Deshalb beginnt auch der Weg bei LOVINU nicht mit einem Formular voller Laborwerte, sondern mit einem kostenlosen Gespräch.</p></div><div className={styles.actions}><a className="pill whitePill" href="mailto:kontakt@lovinu.de">LOVINU kennenlernen</a><a href="/dein-plan">Deinen Plan entdecken →</a></div></section>
