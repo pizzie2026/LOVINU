@@ -36,7 +36,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 @media(max-width:1100px){.plV5HeroCopy h1{font-size:44px}.workV5Hero h1{font-size:46px}.workV5Grid article{padding:0 16px}.workV5Quote{padding-left:8%;padding-right:8%}}
 @media(max-width:720px){.desktopOnly{display:none}.subPage p{font-size:16px}.plV5Hero{min-height:650px;background-size:auto 56%;background-position:28% top;background-color:#f3f4f4}.plV5Hero:after{display:none}.plV5HeroCopy{position:absolute;left:0;right:0;top:auto;bottom:0;transform:none;width:100%;padding:32px 24px 38px;background:#f3f4f4}.plV5HeroCopy h1{font-size:39px}.plV5HeroCopy p{font-size:17px}.plV5Intro h2,.plV5Split h2,.plV5Plan h2{font-size:33px}.plV5Four{grid-template-columns:1fr 1fr}.plV5Split img{min-height:290px}.plV5Vision h2{font-size:30px}.plV5Testimonial{grid-template-columns:86px 1fr;padding:42px 24px}.plV5Testimonial>img{width:78px;height:78px}.testimonialArrows{display:none}.moodCta h2{font-size:24px}.dpHero h1{font-size:40px}.dpSteps h2,.dpFeature h2,.dpPrior h2,.dpJourney h2{font-size:34px}.moodPrinciple blockquote{font-size:23px}.workV5Hero{grid-template-columns:1fr}.workV5Hero>div{padding:42px 24px}.workV5Hero h1{font-size:42px}.workV5Hero img{min-height:62vw;grid-row:1}.workV5Approach{padding:45px 24px}.workV5Approach h2{font-size:31px}.workV5Grid{grid-template-columns:1fr 1fr;gap:28px 0}.workV5Grid article:nth-child(2){border-right:0}.workV5Grid article{padding:0 15px}.workV5Row,.workV5Row.reverse{grid-template-columns:1fr}.workV5Row>img{min-height:52vw}.workV5Row.reverse>img{order:2}.workV5Text{padding:38px 24px}.workV5Text h2,.workV5Double h2{font-size:28px}.workV5Quote{display:block;padding:42px 24px}.workV5Quote blockquote{font-size:21px}.workV5Double{grid-template-columns:1fr;padding:35px 24px}.workV5Double>div{padding:15px 0}.workV5Double>div+div{border-left:0;border-top:1px solid #d3d7d8;margin-top:20px;padding-top:35px}.workV5Close{grid-template-columns:1fr;padding:40px 24px}.workV5Close img{width:110px}}
 \n\n/* V5 desktop refinement: use the photographic areas as real image stages, not split uni panels. */
-.workV5PhotoHero{position:relative;display:block;min-height:520px;background-color:#eef1f1;background-image:linear-gradient(90deg,rgba(238,241,241,.98) 0%,rgba(238,241,241,.94) 30%,rgba(238,241,241,.45) 45%,rgba(238,241,241,0) 58%),url('/images/mood/work-hero-clean.png');background-repeat:no-repeat;background-size:auto contain;background-position:right center;overflow:hidden}
+.workV5PhotoHero{position:relative;display:block;min-height:520px;background-color:#eef1f1;background-image:linear-gradient(90deg,rgba(238,241,241,.98) 0%,rgba(238,241,241,.94) 30%,rgba(238,241,241,.45) 45%,rgba(238,241,241,0) 58%),url('/images/mood/work-hero-clean.png%2012-56-41-047.png');background-repeat:no-repeat;background-size:auto contain;background-position:right center;overflow:hidden}
 .workV5PhotoHero>div{position:relative;z-index:1;width:52%;padding:64px 6%;background:transparent}
 .workV5DiagnosticPhoto{position:relative;display:block;min-height:390px;background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.82) 32%,rgba(255,255,255,.18) 58%,rgba(255,255,255,0) 76%),url('/images/mood/work-diagnostics-clean.png') center/cover no-repeat;overflow:hidden}
 .workV5DiagnosticPhoto .workV5Text{position:relative;z-index:1;width:52%;padding:52px 6%;background:transparent}
@@ -49,7 +49,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
   .workV5Text h2,.workV5Double h2{font-size:34px}.workV5Text p,.workV5Double p{font-size:16px}
 }
 @media(max-width:720px){
-  .workV5PhotoHero{min-height:650px;background:linear-gradient(0deg,#f3f4f4 0%,#f3f4f4 39%,rgba(243,244,244,.88) 48%,rgba(243,244,244,0) 66%),url('/images/mood/work-hero-clean.png') center top/auto 62% no-repeat #f3f4f4}
+  .workV5PhotoHero{min-height:650px;background:linear-gradient(0deg,#f3f4f4 0%,#f3f4f4 39%,rgba(243,244,244,.88) 48%,rgba(243,244,244,0) 66%),url('/images/mood/work-hero-clean.png%2012-56-41-047.png') center top/auto 62% no-repeat #f3f4f4}
   .workV5PhotoHero>div{position:absolute;left:0;right:0;bottom:0;width:100%;padding:34px 24px 40px}
   .workV5DiagnosticPhoto{min-height:690px;background:linear-gradient(0deg,#fff 0%,#fff 45%,rgba(255,255,255,.9) 53%,rgba(255,255,255,0) 68%),url('/images/mood/work-diagnostics-clean.png') center top/auto 58% no-repeat #fff}
   .workV5DiagnosticPhoto .workV5Text{position:absolute;left:0;right:0;bottom:0;width:100%;padding:34px 24px 40px}
@@ -104,7 +104,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 
 /* Personal Longevity: preserve hero image ratio; make river image a full photo stage; remove numbered-circle repetition */
 .plV5Hero{background-size:auto 100%;background-position:left center;background-color:#f3f4f4}
-.plV5Vision{position:relative;display:block;min-height:470px;background:url('/images/mood/personal-future-clean.png') center/cover no-repeat;color:#fff;overflow:hidden}
+.plV5Vision{position:relative;display:block;min-height:470px;background:url('/images/mood/personal-future-clean.png%2012-56-41-078.png') center/cover no-repeat;color:#fff;overflow:hidden}
 .plV5Vision:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(30,47,53,.78) 0%,rgba(30,47,53,.56) 44%,rgba(30,47,53,.08) 76%)}
 .plV5Vision>div{position:relative;z-index:1;width:52%;padding:72px 7%}
 .plV5Vision>img{display:none}
@@ -115,7 +115,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 .practicalFour p{margin:0;font-size:15px}
 
 /* Was wir tun: hero photo definitely visible; remove duplicated 01–04 approach block */
-.workV5PhotoHero{background-image:linear-gradient(90deg,rgba(238,241,241,.93) 0%,rgba(238,241,241,.76) 31%,rgba(238,241,241,.12) 58%,rgba(238,241,241,0) 75%),url('/images/mood/work-hero-clean.png')!important;background-position:35% center!important;background-size:contain!important;background-repeat:no-repeat!important;background-color:#eef1f1!important}
+.workV5PhotoHero{background-image:linear-gradient(90deg,rgba(238,241,241,.93) 0%,rgba(238,241,241,.76) 31%,rgba(238,241,241,.12) 58%,rgba(238,241,241,0) 75%),url('/images/mood/work-hero-clean.png%2012-56-41-047.png')!important;background-position:35% center!important;background-size:contain!important;background-repeat:no-repeat!important;background-color:#eef1f1!important}
 .workV5Approach{padding-bottom:58px}
 
 /* Dein Plan: no numbered steps/eyebrow numbering, synchronized goal cards, differentiated priorities */
@@ -200,7 +200,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 @media (min-width:721px) and (max-width:1100px){
   .workV5PhotoHero{
     min-height:500px!important;
-    background-image:url('/images/mood/work-hero-clean.png')!important;
+    background-image:url('/images/mood/work-hero-clean.png%2012-56-41-047.png')!important;
     background-size:auto 60%!important;
     background-position:right center!important;
     background-repeat:no-repeat!important;
@@ -238,7 +238,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
     flex-direction:column!important;
     min-height:0!important;
     padding-top:0!important;
-    background-image:url('/images/mood/work-hero-clean.png')!important;
+    background-image:url('/images/mood/work-hero-clean.png%2012-56-41-047.png')!important;
     background-size:auto 220px!important;
     background-position:58% top!important;
     background-repeat:no-repeat!important;
@@ -324,7 +324,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 
 .workTimeImage{
   min-height:440px;
-  background:#111 url('/images/mood/work-time-concept.png') center/cover no-repeat;
+  background:#111 url('/images/mood/work-time-concept.png%2012-56-40-969.png') center/cover no-repeat;
 }
 
 .work04{
@@ -355,7 +355,7 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
 .workV5Editorial .workTimeImage{
   padding:0!important;
   min-height:440px!important;
-  background-image:url('/images/mood/work-time-concept.png')!important;
+  background-image:url('/images/mood/work-time-concept.png%2012-56-40-969.png')!important;
   background-size:cover!important;
   background-position:center 75%!important;
   background-repeat:no-repeat!important;
@@ -425,3 +425,10 @@ h1,h2,h3{font-weight:500}.pill,.eyebrow,strong,b{font-weight:600}.siteHeader nav
     right:1% !important;
   }
 }
+
+/* Global readability pass */
+.eyebrow,.subPage .eyebrow{font-size:14px;letter-spacing:.045em}
+.subPage p,.sectionHead p,.planIntro p,.plV5HeroCopy p,.plV5Intro>p,.plV5Split p,.plV5Vision p,.plV5Testimonial p,.dpHero p,.dpSteps>p,.dpFeature p,.dpPrior p,.dpJourney p,.workV5Hero p,.workV5Approach>p,.workV5Text p,.workV5Double p,.workV5Close p{font-size:18px!important;line-height:1.6!important}
+.moodFour p,.plV5Four p,.workV5Grid p,.practicalFour p,.teamGrid p{font-size:17px!important;line-height:1.55!important}
+.workV5Quote p,.moodTestimonial p{font-size:17px!important;line-height:1.55!important}
+@media(max-width:720px){.eyebrow,.subPage .eyebrow{font-size:14px}.subPage p,.sectionHead p,.planIntro p,.plV5HeroCopy p,.plV5Intro>p,.plV5Split p,.plV5Vision p,.plV5Testimonial p,.dpHero p,.dpSteps>p,.dpFeature p,.dpPrior p,.dpJourney p,.workV5Hero p,.workV5Approach>p,.workV5Text p,.workV5Double p,.workV5Close p{font-size:17px!important;line-height:1.6!important}.moodFour p,.plV5Four p,.workV5Grid p,.practicalFour p,.teamGrid p,.workV5Quote p,.moodTestimonial p{font-size:17px!important;line-height:1.55!important}}

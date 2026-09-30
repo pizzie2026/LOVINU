@@ -10,27 +10,27 @@ function BenefitIcon({type}:{type:string}){
  return <svg {...common}><circle cx="22" cy="22" r="7"/><circle cx="42" cy="22" r="7"/><path d="M9 49c0-9 5-15 13-15s13 6 13 15M29 49c0-9 5-15 13-15s13 6 13 15"/></svg>;
 }
 const team = [
-  {img:'/images/team/sandra.png',name:'Dr. med. Sandra Nasikkol',role:'Gefäßchirurgin, ästhetische Medizin & medizinische Ernährungsberatung'},
-  {img:'/images/team/peter.png',name:'Peter Brudny',role:'Anästhesiologie, Mikronährstofftherapie, Schmerztherapie'},
-  {img:'/images/team/stefanie.png',name:'Stefanie Sprinke',role:'Organisation und Umsetzungsmanagement'}
+  {img:'/images/team/sandra.png%2012-56-40-984.png',name:'Dr. med. Sandra Nasikkol',role:'Gefäßchirurgin, ästhetische Medizin & medizinische Ernährungsberatung'},
+  {img:'/images/team/peter.png%2012-56-40-960.png',name:'Peter Brudny',role:'Anästhesiologie, Mikronährstofftherapie, Schmerztherapie'},
+  {img:'/images/team/stefanie.png%2012-56-40-995.png',name:'Stefanie Sprinke',role:'Organisation und Umsetzungsmanagement'}
 ];
 
 export default function Home(){
  return <>
-  <header className="siteHeader"><a className="brand" href="#"><img src="/brand/lovinu-logo.svg" alt="LOVINU"/></a><nav><a href="#">Home</a><a href="/personal-longevity">Personal Longevity</a><a href="/was-wir-tun">Was wir tun</a><a href="/dein-plan">Dein Plan</a><a href="/ueber-lovinu">Über LOVINU</a><a href="/wissen">Wissen</a><a href="#contact">Kontakt</a></nav><a className="pill headerCta" href="#contact">LOVINU kennenlernen →</a><button className="menu" aria-label="Menü">☰</button></header>
+  <header className="siteHeader"><a className="brand" href="#"><img src="/brand/lovinu-logo.svg" alt="LOVINU"/></a><nav><a href="#">Home</a><a href="/personal-longevity">Personal Longevity</a><a href="/was-wir-tun">Was wir tun</a><a href="/dein-plan">Dein Plan</a><a href="/ueber-lovinu">Über LOVINU</a><a href="/wissen">Wissen</a><a href="/kontakt">Kontakt</a></nav><a className="pill headerCta" href="#contact">LOVINU kennenlernen →</a><button className="menu" aria-label="Menü">☰</button></header>
 
   <main>
    <section className="hero"><div className="heroPhoto"/><div className="heroCopy"><h1>Länger gut leben.</h1><a className="pill" href="#contact">LOVINU kennenlernen →</a><div className="heroNote"><img src="/brand/lovinu-heart-blue.svg" alt=""/><p>Lebensfreude<br/>durch Gesundheit.</p></div></div></section>
 
    <section className="band intro" id="longevity"><div className="sectionHead"><span className="rule"/><div><h2>Es geht um mehr als <strong>nur</strong> ein langes Leben.</h2><p>Es geht um möglichst viele <strong>gute</strong> Jahre. Unser Ansatz: früh verstehen, gezielt handeln – für mehr Energie, Klarheit und Lebensfreude.</p></div></div><div className="benefits">{benefits.map(([i,a,b])=><div className="benefit" key={a}><span className="icon"><BenefitIcon type={i}/></span><span>{a}<br/>{b}</span></div>)}</div></section>
 
-   <section className="split" id="work"><div className="copy"><div className="sectionHead"><span className="rule"/><div><h2>Wie gut kennst du dich?</h2><p>Sich selbst zu kennen, bedeutet auch, die eigene Gesundheit zu verstehen. Wir schauen für dich genauer hin – mit medizinischer Expertise, modernen Untersuchungen und einem ganzheitlichen Blick.</p><a className="pill" href="/was-wir-tun">Mehr erfahren →</a></div></div></div><div className="knowledge"><img src="/images/knowledge.jpg" alt="Bewegte Schwarzweiß-Aufnahme als Motiv für genaues Hinschauen"/></div></section>
+   <section className="split" id="work"><div className="copy"><div className="sectionHead"><span className="rule"/><div><h2>Wie gut kennst du dich?</h2><p>Sich selbst zu kennen, bedeutet auch, die eigene Gesundheit zu verstehen. Wir schauen für dich genauer hin – mit medizinischer Expertise, modernen Untersuchungen und einem ganzheitlichen Blick.</p><a className="pill" href="/was-wir-tun">Mehr erfahren →</a></div></div></div><div className="knowledge"><img src="/images/knowledge.jpg%2012-56-41-013.jpg" alt="Bewegte Schwarzweiß-Aufnahme als Motiv für genaues Hinschauen"/></div></section>
 
    <section className="band plan" id="plan"><div className="planIntro"><span className="eyebrow">DER LOVINU-PLAN</span><h2>Dein persönlicher<br/>Gesundheitsplan.</h2><p>Vom unverbindlichen Kennenlernen bis zu deinem Ziel. In sechs klaren Schritten – menschlich begleitet, medizinisch fundiert, persönlich auf dich abgestimmt.</p><a className="pill" href="/dein-plan">Den Plan entdecken →</a></div><div className="steps">{steps.map((s,i)=><div className="step" key={s}><span>{String(i+1).padStart(2,'0')}</span><small>{s}</small></div>)}</div><blockquote>Nicht jeder braucht dasselbe.<br/>Du bekommst das, was für dich sinnvoll ist.</blockquote></section>
 
    <section className="team" id="team"><div className="teamTitle"><div className="sectionHead"><span className="rule"/><div><h2>Die Menschen hinter deinem Plan.</h2><p>Medizinische Erfahrung, wissenschaftliche Kompetenz, verständliche Sprache – für eine moderne Gesundheitsmedizin, die den Menschen in den Mittelpunkt stellt.</p></div></div><a href="#">Unser Team kennenlernen →</a></div><div className="teamGrid">{team.map(m=><article key={m.name}><img src={m.img} alt={m.name}/><h3>{m.name}</h3><p>{m.role}</p></article>)}</div></section>
   </main>
 
-  <footer id="contact"><img className="footerLogo" src="/brand/lovinu-logo-white.png" alt="LOVINU"/><span>Lebensfreude durch Gesundheit.</span><div className="legal"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="#">Kontakt</a></div><div className="footerClaim"><img src="/brand/lovinu-heart-white.png" alt=""/> <b>Länger gut leben.</b></div></footer>
+  <footer id="contact"><img className="footerLogo" src="/brand/lovinu-logo-white.png" alt="LOVINU"/><span>Lebensfreude durch Gesundheit.</span><div className="legal"><a href="#">Impressum</a><a href="#">Datenschutz</a><a href="/kontakt">Kontakt</a></div><div className="footerClaim"><img src="/brand/lovinu-heart-white.png" alt=""/> <b>Länger gut leben.</b></div></footer>
  </>
 }
